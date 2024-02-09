@@ -7,10 +7,11 @@ PING_IDENTITY_DEVOPS_KEY=
 # PingFederate
 #
 PF_LOG_LEVEL=TRACE
-PD_LDAP_SERVICE=pingdirectory:389
+PD_LDAP_SERVICE=pingdirectory:636
 ##PF_USER_PWD=2FederateM0re
 # Configure PF for OIDC Admin SSO
-PF_ADMIN_MODE="OIDC" ## "LDAP" or "native"
+#PF_ADMIN_MODE="OIDC" ## "LDAP" or "native"
+PF_ADMIN_MODE="LDAP" ## "OIDC" or "native"
 
 # Used in OIDC `redirect_uri`
 PF_ADMIN_HOSTNAME={{effective-waddle-q9v7qxvw6vgc9xpv-9999.preview.app.github.dev}}
