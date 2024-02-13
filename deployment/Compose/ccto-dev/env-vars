@@ -7,7 +7,7 @@ PING_IDENTITY_DEVOPS_KEY=
 # PingFederate
 #
 PF_LOG_LEVEL=TRACE
-PD_LDAP_SERVICE=pingdirectory:636
+PD_LDAP_SERVICE=pingdirectory:389
 ##PF_USER_PWD=2FederateM0re
 # Configure PF for OIDC Admin SSO
 #PF_ADMIN_MODE="OIDC" ## "LDAP" or "native"
