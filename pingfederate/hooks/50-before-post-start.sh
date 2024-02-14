@@ -9,7 +9,7 @@
 # shellcheck source=pingcommon.lib.sh
 . "${HOOKS_DIR}/pingcommon.lib.sh"
 
-echo Hello from the server profile 50-before-post-start.sh hook!
+echo Hello from the server profile 50-before-post-start.sh ALEX hook!
 
 # Do some text replacements to enable LDAP for:
 # - OAuth Clients
