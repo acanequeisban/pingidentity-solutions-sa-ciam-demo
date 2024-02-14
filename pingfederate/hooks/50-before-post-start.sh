@@ -9,7 +9,7 @@
 # shellcheck source=pingcommon.lib.sh
 . "${HOOKS_DIR}/pingcommon.lib.sh"
 
-echo Hello from the server profile 50-before-post-start.sh ALEX hook!
+echo Hello from the server profile 50-before-post-start.sh alex hook!
 
 # Do some text replacements to enable LDAP for:
 # - OAuth Clients
@@ -19,6 +19,7 @@ echo Hello from the server profile 50-before-post-start.sh ALEX hook!
 
 echo ## initial 50-before-post-start.sh -> original hivemodule.xml ##
 cat /opt/out/instance/server/default/conf/META-INF/hivemodule.xml
+
 echo ####################################################
 
 sed -e "s#<construct class=\"org.sourceid.oauth20.domain.ClientManagerXmlFileImpl\"/>#<construct class=\"org.sourceid.oauth20.domain.ClientManagerLdapImpl\"/>#" \
