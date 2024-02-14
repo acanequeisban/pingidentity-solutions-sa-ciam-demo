@@ -11,7 +11,7 @@ PD_LDAP_SERVICE=pingdirectory:1389
 ##PF_USER_PWD=2FederateM0re
 # Configure PF for OIDC Admin SSO
 #PF_ADMIN_MODE="OIDC" ## "LDAP" or "native"
-PF_ADMIN_MODE="LDAP" ## "OIDC" or "native"
+PF_ADMIN_MODE="OIDC" ## "OIDC" or "native"
 
 # Used in OIDC `redirect_uri`
 PF_ADMIN_HOSTNAME=https://localhost:9999
