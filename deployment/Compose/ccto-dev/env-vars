@@ -7,18 +7,18 @@ PING_IDENTITY_DEVOPS_KEY=
 # PingFederate
 #
 PF_LOG_LEVEL=TRACE
-PD_LDAP_SERVICE=pingdirectory:636
+PD_LDAP_SERVICE=pingdirectory:1389
 ##PF_USER_PWD=2FederateM0re
 # Configure PF for OIDC Admin SSO
 #PF_ADMIN_MODE="OIDC" ## "LDAP" or "native"
-PF_ADMIN_MODE="native" ## "OIDC" or "native"
+PF_ADMIN_MODE="LDAP" ## "OIDC" or "native"
 
 # Used in OIDC `redirect_uri`
 PF_ADMIN_HOSTNAME=https://localhost:9999
 # PF_ADMIN_PORT="443" ## This is if you can only get to PF Admin via 443
 
 # Used by PD DelAdmin Template
-PF_BASE_URL=https://effective-waddle-q9v7qxvw6vgc9xpv-8443.preview.app.github.dev:9031
+PF_BASE_URL=https://localhost:9031
 
 #
 # PD User Base DN
