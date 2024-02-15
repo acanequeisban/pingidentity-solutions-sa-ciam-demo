@@ -3,6 +3,7 @@ ldap.username=cn=pingfederate
 ldap.password=${PING_IDENTITY_PASSWORD}
 ldap.connectTimeout=10000
 ldap.readTimeout=3000
+ldap.type=PingDirectory
 search.base=${USER_BASE_DN}
 search.filter=(uid={0})
 role.admin=
